@@ -121,7 +121,7 @@ async def games(ctx):
     await ctx.send(embed=g)
 
 
-@client.group(name='madlibs')
+@client.group(name='madlibs', invoke_without_command=True)
 async def madlibs(ctx):
     m = discord.Embed(title=':file_folder: Madlibs',
                       description=f':newspaper: Mad Libs is a phrasal template word game which consists of a player listing a list of words to substitute for blanks in a story before reading aloud and having a halarious moment!\n Madlibs Templates-'
@@ -180,4 +180,4 @@ async def zoo(ctx):
                       description=f"Today I went to the zoo. I saw an {message1.content} {message2.content} jumping up and down its tree.\n They {message3.content} {message4.content} through the large tunnel that led to its {message5.content} {message6.content}.\n I got some peanuts and passed them through the cage to a gigantic gray {anothernoun.content} towering above my head.\n Feeding that animal made me hungry. I went to get a {anotheradj.content} scoop of {anotheradj2.content}'s ice cream.\n It filled my stomach. Afterwards I had to {verb3.content} {adverb2.content} to catch the bus.\n When I got home I {past2.content} my mom for another {finaladj.content} day at the zoo")
     await ctx.send(embed=z)
 
-client.run(os.environ.get("token"), bot=True, reconnect=True)
+client.run('TOKEN')
