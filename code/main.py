@@ -4,6 +4,7 @@ import random
 from discord.ext import commands
 import asyncio
 import json
+
 os.system('pip3 install -r installs.txt')
 
 client = commands.Bot(command_prefix='ayo ', help_command=None)
