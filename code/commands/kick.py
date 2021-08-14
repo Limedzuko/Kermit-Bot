@@ -18,6 +18,5 @@ class kick(commands.Cog):
     await member.kick(reason=reason)
     await ctx.send(embed=ea)
 
-    
 def setup(bot):
   bot.add_cog(kick(bot))
