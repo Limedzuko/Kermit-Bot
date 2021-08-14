@@ -19,11 +19,5 @@ class kick(commands.Cog):
     await ctx.send(embed=ea)
 
     
-  
-
-  
-
-
-
 def setup(bot):
   bot.add_cog(kick(bot))
