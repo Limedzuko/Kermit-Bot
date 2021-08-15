@@ -28,7 +28,7 @@ class slowmode(commands.Cog):
  
 
   @slowmode.error
-  async def sm_error(self, ctx, error):
+  async def error(self, ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
       await ctx.channel.send("Please mention a value to set the slowmode to.")
 
