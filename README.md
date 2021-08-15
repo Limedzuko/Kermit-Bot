@@ -1,2 +1,2 @@
 # Kermit
- Discord.py Moderation Bot - Unrelased Private
+ Discord.py Moderation Bot - Unrelased
